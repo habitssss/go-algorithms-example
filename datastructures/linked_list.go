@@ -1,10 +1,5 @@
 package datastructures
 
-type Node struct {
-	Value int
-	Next  *Node
-}
-
 type LinkedList struct {
 	Length int
 	Head   *Node
@@ -16,13 +11,6 @@ func NewLinkedList() *LinkedList {
 		Length: 0,
 		Head:   nil,
 		Tail:   nil,
-	}
-}
-
-func NewNode(value int) *Node {
-	return &Node{
-		Value: value,
-		Next:  nil,
 	}
 }
 
